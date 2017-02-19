@@ -10,8 +10,8 @@
 					{{> Template.contentBlock}}
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-					<a id="{{id}}-submit" href="#" class="btn btn-{{#if type}}{{type}}{{else}}primary{{/if}}" data-loading-text="Hangon…">{{submit}}</a>
+					{{#if close}}<button type="button" class="btn btn-default" data-dismiss="modal">{{close}}</button>{{/if}}
+					{{#if submit}}<a id="{{id}}-submit" href="#" class="btn btn-{{#if type}}{{type}}{{else}}primary{{/if}}" data-loading-text="Hangon…">{{submit}}</a>{{/if}}
 				</div>
 			</div><!-- /.modal-content -->
 		</div><!-- /.modal-dialog -->
