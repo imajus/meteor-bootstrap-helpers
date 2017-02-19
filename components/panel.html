@@ -1,0 +1,15 @@
+<template name="panel">
+	<div id="{{id}}" class="panel panel-{{#if type}}{{type}}{{else}}default{{/if}}">
+		{{#if title}}
+		<div class="panel-heading">
+			<h2 class="panel-title">
+				{{title}}
+				{{#if badge}}<span class="badge">{{badge}}</span>{{/if}}
+			</h2>
+		</div>		
+		{{/if}}
+		<div class="panel-body">
+			{{> Template.contentBlock}}
+		</div>
+	</div>
+</template>

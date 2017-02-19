@@ -1,0 +1,14 @@
+<template name="collapse">
+	<div class="panel panel-default">
+		<div class="panel-heading" role="tab" id="heading-{{id}}">
+			<h4 class="panel-title">
+				<a data-toggle="collapse" href="#collapse-{{id}}" aria-expanded="true" aria-controls="collapse-{{id}}">{{title}}</a>
+			</h4>
+		</div>
+		<div id="collapse-{{id}}" class="panel-collapse collapse {{#if active}}in{{/if}}" role="tabpanel" aria-labelledby="heading-{{id}}">
+			<div class="panel-body">
+				{{> Template.contentBlock}}
+			</div>
+		</div>
+	</div>
+</template>
