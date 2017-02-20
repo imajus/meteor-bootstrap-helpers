@@ -8,6 +8,6 @@ Template.modal.onRendered(function() {
 	this.$('.modal').modal(options);
 });
 
-Template.modal.onDestroyed(function() {
-  this.$('.modal').modal('destroy');
-});
+// Template.modal.onDestroyed(function() {
+//   this.$('.modal').modal('destroy');
+// });
