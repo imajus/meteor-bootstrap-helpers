@@ -1,3 +1,4 @@
+import './components/breadceumbs.js';
 import './components/carousel.js';
 import './components/collapse.js';
 import './components/icon.js';
