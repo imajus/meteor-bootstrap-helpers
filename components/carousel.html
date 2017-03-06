@@ -3,18 +3,16 @@
 	  <!-- Indicators -->
 	  <ol class="carousel-indicators">
 			{{#each item in items}}
-		    <li data-target="#{{id}}" data-slide-to="{{@index}}" class="{{activeClass @index 0}}"></li>
+		    <li data-target="#{{id}}" data-slide-to="{{@index}}" class=""></li>
 			{{/each}}
 	  </ol>
 
 	  <!-- Wrapper for slides -->
 	  <div class="carousel-inner" role="listbox">
 			{{#each item in items}}
-				{{#let index = @index}}
-					<div class="item {{activeClass index 0}}">
-						{{> Template.contentBlock index=index item=item}}
-					</div>
-				{{/let}}
+				<div class="item">
+					{{> Template.contentBlock index=@index item=item}}
+				</div>
 			{{/each}}
 	  </div>
 

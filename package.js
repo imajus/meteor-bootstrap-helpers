@@ -1,6 +1,6 @@
 Package.describe({
   name: 'imajus:bootstrap-helpers',
-  version: '0.0.5',
+  version: '0.0.6',
   // Brief, one-line summary of the package.
   summary: 'Bootstrap Blaze helpers and snippets',
   // URL to the Git repository containing the source code for this package.
@@ -13,7 +13,7 @@ Package.describe({
 Package.onUse(function(api) {
   api.versionsFrom('1.4.2');
   api.use('ecmascript@0.6.3');
-  api.use(['templating@1.3.0', 'imajus:helpers-core@0.0.1'], 'client');
+  api.use(['templating@1.3.0', 'imajus:helpers-core@0.0.1', 'tracker'], 'client');
   api.mainModule('bootstrap-helpers.js', 'client');
 });
 
