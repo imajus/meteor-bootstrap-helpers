@@ -8,7 +8,3 @@ Template.modal3.onRendered(function() {
 	const options = _.extend({ show: false }, this.data.options);
 	this.$('.modal').modal(options);
 });
-
-// Template.modal.onDestroyed(function() {
-//   this.$('.modal').modal('destroy');
-// });

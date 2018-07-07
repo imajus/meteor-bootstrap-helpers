@@ -13,14 +13,9 @@ import './components/bootstrap3/panel';
 // Bootstrap 4
 import './components/bootstrap4/modal';
 
-const helpers = [
-  'breadcrumbs',
-  'carousel',
-  'collapse',
-  'modal'
-];
+const commonHelpers = ['modal'];
 
-helpers.forEach(helper => 
+commonHelpers.forEach(helper => 
   Template.registerHelper(helper, () => {
     const suffix = BootstrapHelpers.forBootstrap4 ? '4' : '3';
     return Template[`${helper}${suffix}`];
