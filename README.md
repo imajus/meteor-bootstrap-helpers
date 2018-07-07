@@ -40,7 +40,7 @@ Following helpers are provided for Bootstrap 3:
 * `{{#collapse id=String active=Boolean title=String}}...{{/collapse}}` - Outputs collapse component.
 * `{{#modal id=String title=String close=String submit=String options=Object}}...{{/modal}}` - Outputs modal component. Initially, modal is hidden and you suppose to call `$('#myModal').modal('show')` in order to display it. `options` are passed to Bootstrap modal initialization method as is, e.g. passing variable which contains object `{ show: true }` will make modal to appear right after rendering.
 ```html
-{{> modal id='myModal' title='My modal' close='Dismiss' submit='OK' options=modalOptions}}
+{{#modal id='myModal' title='My modal' close='Dismiss' submit='OK' options=modalOptions}}
   <p>Custom modal content goes here.</p>
   <p>"modalOptions" must be an object or Template helper which returns an object</p>
 {{/modal}}
