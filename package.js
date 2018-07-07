@@ -1,6 +1,6 @@
 Package.describe({
   name: 'imajus:bootstrap-helpers',
-  version: '0.0.7',
+  version: '0.0.8',
   // Brief, one-line summary of the package.
   summary: 'Bootstrap 3/4 Blaze snippets',
   // URL to the Git repository containing the source code for this package.
