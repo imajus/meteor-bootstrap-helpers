@@ -1,5 +1,5 @@
-<template name="modal">
-	<div id="{{id}}" class="modal fade">
+<template name="modal3">
+	<div id="{{id}}" tabindex="-1" class="modal fade">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
@@ -13,7 +13,7 @@
 					{{#if close}}<button type="button" class="btn btn-default" data-dismiss="modal">{{close}}</button>{{/if}}
 					{{#if submit}}<a id="{{id}}-submit" href="#" class="btn btn-{{#if type}}{{type}}{{else}}primary{{/if}}" data-loading-text="Hangon…">{{submit}}</a>{{/if}}
 				</div>
-			</div><!-- /.modal-content -->
-		</div><!-- /.modal-dialog -->
-	</div><!-- /.modal -->
+			</div>
+		</div>
+	</div>
 </template>

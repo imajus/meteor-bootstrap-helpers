@@ -1,0 +1,27 @@
+<template name="modal4">
+	<div id="{{id}}" class="modal fade" tabindex="-1" role="dialog">
+		<div class="modal-dialog" {{dialogClasses}} role="document">
+			<div class="modal-content">
+        {{#unless noHeader}}
+          <div class="modal-header">
+            <h5 class="modal-title">{{title}}</h5>
+            {{#unless noHeaderClose}}
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            {{/unless}}
+          </div>
+        {{/unless}}
+				<div class="modal-body">
+					{{> Template.contentBlock}}
+        </div>
+        {{#unless noFooter}}
+          <div class="modal-footer">
+            {{#if closeBtnLabel}}<button type="button" class="btn btn-{{or closeBtnType 'secondary'}}" data-dismiss="modal">{{closeBtnLabel}}</button>{{/if}}
+            {{#if submitBtnLabel}}<a id="{{id}}-submit" href="#" class="btn btn-{{or submitBtnType 'primary'}}" data-loading-text="{{submitBtnLoadingText}}">{{submitBtnLabel}}</a>{{/if}}
+          </div>
+        {{/unless}}
+			</div>
+		</div>
+	</div>
+</template>
