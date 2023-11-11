@@ -14,8 +14,9 @@ import './components/bootstrap4/breadcrumbs';
 import './components/bootstrap4/modal';
 import './components/bootstrap4/carousel';
 import './components/bootstrap4/collapse';
+import './components/bootstrap4/page-header';
 
-const commonHelpers = ['breadcrumbs', 'modal', 'carousel', 'collapse'];
+const commonHelpers = ['breadcrumbs', 'modal', 'carousel', 'collapse', 'pageHeader'];
 
 commonHelpers.forEach(helper => 
   Template.registerHelper(helper, () => {

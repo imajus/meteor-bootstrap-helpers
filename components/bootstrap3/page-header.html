@@ -1,5 +1,11 @@
-<template name="pageHeader">
+<template name="pageHeader3">
 	<header class="page-header">
-		<h1>{{> Template.contentBlock}}</h1>
+		<h1>
+			{{#if heading}}
+				{{heading}}
+			{{else}}
+				{{>Template.contentBlock}}
+			{{/if}}
+		</h1>
 	</header>
 </template>
