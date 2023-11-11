@@ -1,0 +1,14 @@
+<template name="collapse4">
+	<div class="card card-default">
+		<div class="card-header" id="heading-{{id}}">
+			<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" href="#collapse-{{id}}" aria-expanded="{{#if active}}true{{else}}false{{/if}}" aria-controls="collapse-{{id}}">{{title}}</button>
+			</h2>
+		</div>
+		<div id="collapse-{{id}}" class="collapse {{#if active}}show{{/if}}" aria-labelledby="heading-{{id}}">
+			<div class="card-body">
+				{{>Template.contentBlock}}
+			</div>
+		</div>
+	</div>
+</template>

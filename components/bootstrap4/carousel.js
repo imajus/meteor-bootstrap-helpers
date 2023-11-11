@@ -4,11 +4,11 @@ import './carousel.html';
 
 let index = 1;
 
-Template.carousel3.onCreated(function() {
+Template.carousel4.onCreated(function() {
 	this.index = index++;
 });
 
-Template.carousel3.onRendered(function() {
+Template.carousel4.onRendered(function() {
 	this.autorun(() => {
 		const data = Template.currentData();
 		Tracker.afterFlush(() => {
@@ -19,7 +19,7 @@ Template.carousel3.onRendered(function() {
 	});
 });
 
-Template.carousel3.helpers({
+Template.carousel4.helpers({
 	id() {
 		const data = Template.currentData();
 		if ( data && data.id ) {

@@ -1,5 +1,4 @@
 import { Template } from 'meteor/templating';
-import { Blaze } from 'meteor/blaze';
 
 // Common
 import './components/icon';
@@ -11,9 +10,12 @@ import './components/bootstrap3/modal';
 import './components/bootstrap3/page-header';
 import './components/bootstrap3/panel';
 // Bootstrap 4
+import './components/bootstrap4/breadcrumbs';
 import './components/bootstrap4/modal';
+import './components/bootstrap4/carousel';
+import './components/bootstrap4/collapse';
 
-const commonHelpers = ['modal'];
+const commonHelpers = ['breadcrumbs', 'modal', 'carousel', 'collapse'];
 
 commonHelpers.forEach(helper => 
   Template.registerHelper(helper, () => {
