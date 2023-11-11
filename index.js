@@ -11,6 +11,7 @@ import './components/bootstrap3/page-header';
 import './components/bootstrap3/panel';
 // Bootstrap 4
 import './components/bootstrap4/breadcrumbs';
+import './components/bootstrap4/card';
 import './components/bootstrap4/modal';
 import './components/bootstrap4/carousel';
 import './components/bootstrap4/collapse';

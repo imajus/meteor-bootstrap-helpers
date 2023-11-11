@@ -1,0 +1,14 @@
+<template name="card">
+  <div class="card">
+    <div class="card-body">
+      {{#if title}}
+        <h5 class="card-title">{{title}}</h5>
+      {{/if}}
+      {{#unless loading}}
+        {{>Template.contentBlock}}
+      {{else}}
+        <div class="text-center">{{>i fa="circle-o-notch" spin=true size="3x"}}</div>
+      {{/unless}}
+    </div>
+  </div>
+</template>
