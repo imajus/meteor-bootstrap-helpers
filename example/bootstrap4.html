@@ -1,0 +1,25 @@
+<template name="exampleOfBootstrap4">
+  <h1>Breadcrumbs</h1>
+  {{>breadcrumbs items=breadcrumbItems}}
+  <h1>Carousel</h1>
+  {{#carousel items=carouselItems}}
+    <img src="{{item.src}}" alt="Image#{{index}}"/>
+  {{/carousel}}
+  <h1>Collapse</h1>
+  {{#collapse title="Collapse title"}}
+    <p>Tenetur modi corporis sint voluptas vero eum iste. Id odit est id. Porro molestiae minima repellat voluptates itaque dolore. Aut rerum et possimus. Qui omnis quasi accusantium.</p>
+    <p>Aut ea cum amet sunt sit. Dicta et officiis dolores. At enim natus consequatur minima rerum quis. Velit vero hic velit suscipit maxime est consequuntur molestiae. Error ut sint aliquid voluptates corporis.</p>
+    <p>Temporibus molestias et et ea nemo inventore sit. Mollitia velit fuga voluptatibus sunt impedit. Veritatis minus sed eius minus.</p>
+  {{/collapse}}
+  <h1>Modal</h1>
+  <button class="btn btn-primary" data-toggle="modal" data-target="#modal">Show modal</button>
+  {{#modal id='modal' title="Modal title" closeBtnLabel='Close'}}
+    <p>Sequi non unde recusandae est dolorum voluptas. Vero suscipit harum aut aut eaque. Impedit id consequatur ab.</p>
+  {{/modal}}
+  <h1>Icons</h1>
+  {{>i fa='cog' spin=true}}
+  {{>i fa='spinner' pulse=true}}
+  {{>i fa='camera-retro' size='lg'}}
+  {{>i fa='camera-retro' size='2x'}}
+  {{>i fa='camera-retro' rotate=90 size='4x' border=true}}
+</template>

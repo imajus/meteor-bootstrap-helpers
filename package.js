@@ -16,5 +16,8 @@ Package.onUse(function(api) {
     'tracker',
     'blaze'
   ], 'client');
+  api.addFiles([
+    'example/bootstrap4.js',
+  ], 'client');
   api.mainModule('index.js', 'client');
 });
