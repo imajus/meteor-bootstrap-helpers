@@ -1,1 +1,1 @@
-<template name="i">{{#if bs}}<span class="glyphicon glyphicon-{{bs}}"></span>{{/if}}{{#if fa}}<i class="fa fa-{{fa}}"></i>{{/if}}</template>
+<template name="i">{{#if bs}}<span class="glyphicon glyphicon-{{bs}}"></span>{{else if fa}}<i {{faAtts}}></i>{{/if}}</template>
