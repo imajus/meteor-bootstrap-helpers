@@ -82,3 +82,19 @@ Initially, modal is hidden and you suppose to call `$('#myModal').modal('show')`
   Note: The `options` object is passed to Bootstrap modal initialization function as is, e.g. passing variable which contains object `{ show: true }` will make the modal to appear right after rendering.
 * `{{#pageHeader heading=String}}...{{/pageHeader}}` - Same as for Bootstrap3.
 * `{{>card title=String loading=Boolean}}...{{/card}}` - Renders card component, which is a direct successor of the Bootstrap3 panel component. Additionally, allows to render a loading animation when the data is not yet ready for displaying.
+* `{{>toast message=String heading=String brand=String}}...{{/toast}}` - Renders Toast component. The most useful when used via JavaScript API:
+  ```handlebars
+  {{!-- Put this in your layout template --}}
+  <div class="position-relative mt-3">
+    {{>toastContainer}}
+  </div>
+  ```
+  ```js
+  import { showToast, showError } from 'meteor/imajus:bootstrap-helpers';
+  showToast({
+    heading: 'Greeting',
+    message: 'Hello, world!',
+    brand: 'success',
+  });
+  showError(new Error('Something went wrong!'));
+  ```

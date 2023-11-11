@@ -1,0 +1,23 @@
+<template name="toast">
+  <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    {{#if heading}}
+      <div class="toast-header text-{{or brand 'default'}}">
+        <strong class="mr-auto">{{heading}}</strong>
+        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    {{/if}}
+    <div class="toast-body">
+      {{#if message}}
+        {{message}}
+      {{else}}
+        {{>Template.contentBlock}}
+      {{/if}}
+    </div>
+  </div>
+</template>
+
+<template name="toastContainer">
+  <div id="toast-container" class="px-3" style="position: absolute; top: 0; right: 0;"></div>
+</template>

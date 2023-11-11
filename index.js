@@ -16,6 +16,7 @@ import './components/bootstrap4/modal';
 import './components/bootstrap4/carousel';
 import './components/bootstrap4/collapse';
 import './components/bootstrap4/page-header';
+export { showToast, showError } from './components/bootstrap4/toast';
 
 const commonHelpers = ['breadcrumbs', 'modal', 'carousel', 'collapse', 'pageHeader'];
 
@@ -27,5 +28,5 @@ commonHelpers.forEach(helper =>
 );
 
 export const BootstrapHelpers = {
-  forBootstrap4: false
+  forBootstrap4: false,
 };
