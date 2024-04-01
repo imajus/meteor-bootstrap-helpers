@@ -98,3 +98,21 @@ Initially, modal is hidden and you suppose to call `$('#myModal').modal('show')`
   });
   showError(new Error('Something went wrong!'));
   ```
+* `{{>navbar title=String root=String items=Array theme=('light'|'dark') expand=('sm'|'md'|'lg'|'xl') align=(null|'center'|'right') active=(Boolean|Function)}}` — Renders [Navbar](https://getbootstrap.com/docs/4.6/components/navbar/) component. The `items` value needs to be built with JavaScript:
+  ```js
+  import { FlowRouter } from 'meteor/ostrio:flow-router-extra';
+  Template.Layout.helpers({
+    navbarItems: () => [
+      {
+        label: 'Events',
+        link: FlowRouter.path('Events.browse'),
+        active: () => ['Events.browse', 'Events.create', 'Events.edit'].includes(FlowRouter.getRouteName()),
+      },
+      {
+        label: 'Registrations',
+        link: FlowRouter.path('Registrations.browse'),
+        active: () => FlowRouter.getRouteName() === 'Registrations.browse',
+      },
+    ],
+  });
+  ```

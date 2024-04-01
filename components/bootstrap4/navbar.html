@@ -1,0 +1,20 @@
+<template name="navbar">
+  <nav class="navbar navbar-expand-{{or expand 'lg'}} navbar-{{or theme 'light'}} {{classes}}">
+    {{#if title}}
+      <a class="navbar-brand" href="{{or root '/'}}">{{title}}</a>
+    {{/if}}
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar">
+      <ul class="navbar-nav {{#if eq align 'center'}}mx-auto{{else if eq align 'right'}}ml-auto{{/if}}">
+        {{#each items}}
+          <li class="nav-item {{#if active}}active{{/if}}">
+            <a class="nav-link" href="{{link}}">{{label}}</a>
+          </li>
+        {{/each}}
+      </ul>
+    </div>
+  </nav>
+</template>

@@ -1,6 +1,6 @@
 Package.describe({
   name: 'imajus:bootstrap-helpers',
-  version: '0.0.9',
+  version: '0.0.10',
   summary: 'Bootstrap 3/4 Blaze snippets',
   git: 'https://github.com/imajus/meteor-bootstrap-helpers.git',
   documentation: 'README.md'
@@ -14,7 +14,7 @@ Package.onUse(function(api) {
     'imajus:helpers-core@0.0.2',
     'imajus:common-helpers@0.0.3',
     'tracker',
-    'blaze@2.7.1'
+    'blaze@2.7.1',
   ], 'client');
   api.addFiles([
     'example/bootstrap4.js',

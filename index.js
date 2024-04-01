@@ -13,6 +13,7 @@ import './components/bootstrap3/panel';
 import './components/bootstrap4/breadcrumbs';
 import './components/bootstrap4/card';
 import './components/bootstrap4/modal';
+import './components/bootstrap4/navbar';
 import './components/bootstrap4/carousel';
 import './components/bootstrap4/collapse';
 import './components/bootstrap4/page-header';
